@@ -1,0 +1,40 @@
+---
+title: "RoadAccidents_2022"
+author: "Michal Uhrinek"
+date: "2023-06-16"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+``` {r loading dataset}
+accidents_df <- read_xls("sk_nehody_data_2022.xls")
+View(accidents_df)
+```
+##Cleaning data - missing values, replacing values
+``` {r}
+# Replace all empty columns with 0
+accidents_df[is.na(accidents_df)] <- 0
+View(accidents_df)
+```
+```{R}
+#What types are data in? what data do I have?
+str(accidents_df)
+```
+##Data Visualization 
+```{r Data visualization install of packages}
+#Data Visualization
+install.packages("ggplot")
+library(ggplot2)  #load package
+```
+
+
+
+
+
+
+
+```
