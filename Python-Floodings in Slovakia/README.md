@@ -1,28 +1,55 @@
-PROJECT: Flooding Data Analysis in Slovakia
-DESCRIPTION: Analyzes historical flooding data in Slovakia to identify patterns, assess damages, and visualize trends.
-CREATED: November 25, 2024
-AUTHOR: Michal Uhrinek
+Flooding Data Analysis in Slovakia
+Overview
+- This project analyzes historical flooding data in Slovakia, providing comprehensive insights into flood events, their impacts, and trends from 1990 to 2023.
+Features
+- Detailed analysis of flooding events across different Slovak rivers
+Visualization of:
+- Flooding events over time
+- Cost of damage by year
+- People affected by location
+- Rainfall patterns
+Data Source
+- Official data from Slovak Hydrometeorological Institute (SHMU)
+- Covers flooding events from 1990 to 2023
+- Includes metrics like:
+- Water levels
+- Location coordinates
+- People affected
+- Cost of damage
+- Weather conditions
+Installation
+- Prerequisites
+- Python 3.8+
+Libraries:
+- pandas
+- numpy
+- matplotlib
+Setup
+- bash
+git clone https://github.com/yourusername/slovakia-flooding-analysis.git
+cd slovakia-flooding-analysis
+pip install -r requirements.txt
 
-MAIN COMPONENTS:
-1. Data Loading: Uses `pandas` to load flooding data from an Excel file into a DataFrame for analysis.
-2. Data Processing:
-   - Converts date columns to datetime format for time-based analysis.
-   - Groups data by date and location to count events and assess impacts.
-3. Visualization:
-   - Utilizes `matplotlib` to create scatter plots, bar charts, and line charts for visualizing flooding events, costs, and affected populations over time.
-4. Analysis:
-   - Calculates total costs and number of people affected by floods.
-   - Summarizes flooding events by year, location, and river.
+Usage
+- python
+python flooding_analysis.py
 
-CHALLENGES OVERCOME:
-- Managed conversion of date formats to ensure accurate grouping and analysis.
-- Addressed potential font glyph issues in plots for better readability.
-- Handled large datasets efficiently using pandas for data manipulation.
-
-DEPENDENCIES:
-- `numpy`: Numerical operations
-- `pandas`: Data manipulation
-- `matplotlib`: Data visualization
-
-USAGE:
-Run the script to load the flooding data from the specified Excel file path. The script will generate various plots to visualize flooding trends, costs, and affected populations in Slovakia over time.
+Key Visualizations
+- Flooding events scatter plot
+- Cost of damage by year
+- People affected by location
+- Rainfall levels over time
+Key Findings
+- Total flooding cost analyzed
+- Most affected locations
+- Rivers with most flooding events
+- Contributing
+- Fork the repository
+- Create your feature branch
+- Commit changes
+- Push to the branch
+- Create Pull Request   
+License
+- MIT License
+Contact
+- Michal Uhrinek - uhrinekmichal@gmail.com   
