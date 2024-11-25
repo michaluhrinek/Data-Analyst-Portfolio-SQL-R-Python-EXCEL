@@ -3,7 +3,7 @@ Overview
 This project analyzes historical flooding data in Slovakia, providing comprehensive insights into flood events, their impacts, and trends from 1990 to 2023.
 Features
 Detailed analysis of flooding events across different Slovak rivers
-Visualization of:
+Visualization of: 
 Flooding events over time
 Cost of damage by year
 People affected by location
